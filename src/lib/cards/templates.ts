@@ -1,0 +1,110 @@
+import type { Card } from "./types";
+
+export const defaultCard: Card = {
+  id: "default",
+  pageTitle: "A question for you",
+  question: "Do you want to go on a date with me?",
+  responseOptionsLabel: "Response options",
+  yesLabel: "Yes",
+  noLabel: "No",
+  successMessage: "You said yes. I was hoping you would.",
+  theme: "blush",
+  difficulty: "classic",
+  kicker: "A question for you",
+};
+
+export const templates: readonly Card[] = [
+  defaultCard,
+  {
+    id: "coffee-date",
+    pageTitle: "A coffee date",
+    question: "Would you make our next coffee a date?",
+    responseOptionsLabel: "Coffee date responses",
+    yesLabel: "Let's go",
+    noLabel: "Maybe later",
+    successMessage: "Coffee, then whatever we talk ourselves into.",
+    theme: "linen",
+    difficulty: "classic",
+    kicker: "Slow morning",
+  },
+  {
+    id: "stargazing",
+    pageTitle: "Stargazing",
+    question: "Would you go stargazing with me?",
+    responseOptionsLabel: "Stargazing responses",
+    yesLabel: "Under the stars",
+    noLabel: "Rain check",
+    successMessage: "A blanket, a thermos, and no agenda.",
+    theme: "dusk",
+    difficulty: "classic",
+    kicker: "Late night",
+  },
+  {
+    id: "midnight-movie",
+    pageTitle: "Movie night",
+    question: "Want to pick a movie and make it a cozy night?",
+    responseOptionsLabel: "Movie night responses",
+    yesLabel: "Movie night",
+    noLabel: "Not tonight",
+    successMessage: "You pick. I'll handle the snacks.",
+    theme: "noir",
+    difficulty: "classic",
+    kicker: "Lights down",
+  },
+  {
+    id: "picnic",
+    pageTitle: "Picnic",
+    question: "Picnic this weekend — just us?",
+    responseOptionsLabel: "Picnic responses",
+    yesLabel: "Pack a basket",
+    noLabel: "Too busy",
+    successMessage: "Grass stains, good bread, and time to waste.",
+    theme: "sage",
+    difficulty: "gentle",
+    kicker: "Open air",
+  },
+  {
+    id: "cook",
+    pageTitle: "Cook together",
+    question: "Want to cook something slightly ambitious together?",
+    responseOptionsLabel: "Kitchen responses",
+    yesLabel: "I'll chop",
+    noLabel: "Takeout instead",
+    successMessage: "Aprons optional. Dancing in the kitchen is not.",
+    theme: "blush",
+    difficulty: "classic",
+    kicker: "At home",
+  },
+  {
+    id: "walk",
+    pageTitle: "A long walk",
+    question: "Walk with me until we run out of things to say?",
+    responseOptionsLabel: "Walk responses",
+    yesLabel: "Lead the way",
+    noLabel: "Not today",
+    successMessage: "We won't run out. That's the point.",
+    theme: "linen",
+    difficulty: "gentle",
+    kicker: "No plan",
+  },
+  {
+    id: "concert",
+    pageTitle: "A show",
+    question: "Come stand too close at a show with me?",
+    responseOptionsLabel: "Concert responses",
+    yesLabel: "I'm in",
+    noLabel: "Too loud",
+    successMessage: "I'll find you by the left speaker.",
+    theme: "noir",
+    difficulty: "ruthless",
+    kicker: "Too loud",
+  },
+];
+
+const byId: Record<string, Card> = Object.fromEntries(
+  templates.map((card) => [card.id, card]),
+);
+
+export function getCardById(cardId: string): Card | undefined {
+  return byId[cardId];
+}

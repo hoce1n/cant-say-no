@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/create",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Create a card — Can't Say No",
+      "hasCanvas": false,
+      "bodyTextLen": 696,
+      "bodyTextHash": "54640e7a71f31e63cf284d423c83f60c99677831eb62d99e1c758e0bb19f59c6",
+      "bodyTextPrefix": "Skip to content Can't Say No Ask Create Back to the default card",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/create-page.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Create a card — Can't Say No",
+      "hasCanvas": false,
+      "bodyTextLen": 696,
+      "bodyTextHash": "54640e7a71f31e63cf284d423c83f60c99677831eb62d99e1c758e0bb19f59c6",
+      "bodyTextPrefix": "Skip to content Can't Say No Ask Create Back to the default card",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/create-page-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/create-page.json"
+}

@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Can't Say No",
+      "hasCanvas": false,
+      "bodyTextLen": 911,
+      "bodyTextHash": "f013a16777e5cce7daf576cbb611664c018d7f3f4185a4412adab1717890ec81",
+      "bodyTextPrefix": "Skip to content Can't Say No Ask Create A QUESTION FOR YOU Do yo",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Can't Say No",
+      "hasCanvas": false,
+      "bodyTextLen": 911,
+      "bodyTextHash": "f013a16777e5cce7daf576cbb611664c018d7f3f4185a4412adab1717890ec81",
+      "bodyTextPrefix": "Skip to content Can't Say No Ask Create A QUESTION FOR YOU Do yo",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
